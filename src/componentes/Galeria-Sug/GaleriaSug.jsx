@@ -18,6 +18,34 @@ const GaleriaSug = (props) => {
                 <span>{props.moeda}</span>{props.price}
               </p>
             </div>
+
+            <div>
+              <img src={props.imagem} alt="" />
+              <p className="product-name">{props.productName}</p>
+              <p className="rate">{props.stars}</p>
+              <p className="product-price">
+                <span>{props.moeda}</span>{props.price}
+              </p>
+            </div>
+
+            <div>
+              <img src={props.imagem} alt="" />
+              <p className="product-name">{props.productName}</p>
+              <p className="rate">{props.stars}</p>
+              <p className="product-price">
+                <span>{props.moeda}</span>{props.price}
+              </p>
+            </div>
+
+            <div>
+              <img src={props.imagem} alt="" />
+              <p className="product-name">{props.productName}</p>
+              <p className="rate">{props.stars}</p>
+              <p className="product-price">
+                <span>{props.moeda}</span>{props.price}
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
