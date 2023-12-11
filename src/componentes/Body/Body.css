@@ -1,0 +1,70 @@
+* {
+  font-family: "roboto";
+}
+
+span {
+  color: orange;
+  font-weight: bold;
+}
+
+.body-inner-content {
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(247, 220, 173));
+}
+
+.body-bottom-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.body-bottom-side-left {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.body-bottom-side-right {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-bottom-side-right img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.body-bottom-side-left h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.body-bottom-side-left p {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.body-bottom-side-left button {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 3.8rem;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.body-bottom-side-left button:hover {
+  background-color: rgb(152, 100, 2);
+}
+
+@media (max-width: 800px) {
+  .body-bottom-side {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+}
