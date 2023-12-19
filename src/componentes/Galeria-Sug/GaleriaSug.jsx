@@ -1,51 +1,25 @@
 import React from "react";
-
+import Card from "../Card/Card"
 import "./GaleriaSug.css";
 
-const GaleriaSug = (props) => {
+const GaleriaSug = ({cards}) => {
   return (
     <>
       <div className="main">
         <div className="page-inner">
-          <h3 className="section-title">{props.title}</h3>
+          <h3 className="section-title"></h3>
           <div className="subtitle-underline"></div>
           <div className="cols cols-4">
-            <div>
-              <img src={props.imagem} alt="" />
-              <p className="product-name">{props.productName}</p>
-              <p className="rate">{props.stars}</p>
-              <p className="product-price">
-                <span>{props.moeda}</span>{props.price}
-              </p>
-            </div>
-
-            <div>
-              <img src={props.imagem} alt="" />
-              <p className="product-name">{props.productName}</p>
-              <p className="rate">{props.stars}</p>
-              <p className="product-price">
-                <span>{props.moeda}</span>{props.price}
-              </p>
-            </div>
-
-            <div>
-              <img src={props.imagem} alt="" />
-              <p className="product-name">{props.productName}</p>
-              <p className="rate">{props.stars}</p>
-              <p className="product-price">
-                <span>{props.moeda}</span>{props.price}
-              </p>
-            </div>
-
-            <div>
-              <img src={props.imagem} alt="" />
-              <p className="product-name">{props.productName}</p>
-              <p className="rate">{props.stars}</p>
-              <p className="product-price">
-                <span>{props.moeda}</span>{props.price}
-              </p>
-            </div>
-
+            {cards.map((card, index) => (
+              <Card 
+                key={card.index}
+                imagem={card.imagem}
+                productName={card.productName}
+                stars={card.stars}
+                moeda={card.moeda}
+                price={card.price}
+              />
+            ))}
           </div>
         </div>
       </div>

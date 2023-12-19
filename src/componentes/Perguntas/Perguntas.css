@@ -1,0 +1,25 @@
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(247, 220, 173));
+}
+
+.card-perguntas {
+    text-align: center;
+    width: 900px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid orange;
+}
+
+.card-perguntas p:first-child {
+    font-weight: bold;
+}
+
+.card-perguntas p:last-child {
+    color: orangered;
+}
